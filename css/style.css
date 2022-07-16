@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ .header_content {
+    background-color: #403501;
+    color: #0f0e0e;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ body {
+    font-size: 10px;
+    background-image: url(/assets-polo/pexels-milena-de-narvaez-ayllon-2889030.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .body__servicios {
+    font-size: 10px;
+    background-image: url(/assets-polo/campo-fondo.png.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+    .body_contact{
+    font-size: 10px;
+    background-image: url(/assets-polo/fondo\ caballo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .matias_p{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+ 
+ }
+ .contact_label{
+    font-size: 20px;
+    color: #fdfdfd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+    .input,textarea{
+       width: 100%;
+       margin-bottom: 20px;
+       padding: 7px;
+       box-sizing: border-box;
+       font-size: 17px;
+       border: none;
+    }
+    .textarea{
+       min-height: 100px;
+       max-height: 200px;
+       max-width: 100%;
+    }
+    .button_contact{
+       background: #313884;
+       color:#fff;
+       padding:20px;
+    }
+ 
+ .content_title {
+    color: #f8f8f8;
+    font-size: 30px;
+ }
+ 
+ .content_navbar {
+    display: flex;
+ }
+ 
+ .content_navbar li {
+    margin: 0 15px;
+ 
+ }
+ 
+ .content_navbar li a {
+    color: #f8f8f8;
+    font-weight: bold;
+ }
+ 
+ .title_p {
+    font-size: 30px;
+    color: #f8f8f8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .title_o {
+    font-size: 30px;
+    color: #f8f8f8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .title_back{
+    font-size: 30px;
+    color:#D9B64E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .presentation_a {
+    font-size: 30px;
+    color: #A68D44;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+ }
+ .presentation_b {
+    font-size: 30px;
+    color: #f8f8f8;
+    width: 900px;
+    height: 300px;
+ }
+ .presentation_c {
+    font-size: 30px;
+    color: #f8f8f8;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+ }
+ .presentation_d {
+    font-size: 40px;
+    color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ 
+ .card {
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+ }
+ .card__grind :hover{
+    transform: translateY(-15px);
+ }
+ 
+ .card__title{
+    margin-bottom: 20px;
+ }
+ .card__description{
+    margin-bottom: 40px;
+ }
+ .card__header {
+    position: relative;
+ }
+ .card__header--strong{
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+ .card__link{
+    background-color: #0f0e0e;
+    color: #f8f8f8;
+    width: 100%;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+ }
+ 
+ .card__header img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+ }
+ 
+ .card__header small {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 10px;
+ }
+ 
+ 
+ .card__grind {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 50px;
+ }
+ 
+ 
+ span{
+    display: none;
+ }
+  @media(max-width: 768px){
+    .content_navbar{
+       flex-direction: column;
+    }
+    .grind{
+       grid-template-columns: 1fr;
+    }
+ }
+ @media (max-width: 480px){
+    .content_navbar{
+       display: none;
+    }
+    span{
+       display:inline-block;
+     font-size: 50px;
+    }
+    .content_navbar{
+       flex-direction: row;
+       align-items: center;
+    }
+ }
+ @media(max-width: 992px){
+    .card__grind{
+       grid-template-columns:repeat(2,1fr)
+    }
+ }
+ @media(max-width: 576px){
+    .card__grind{
+       grid-template-columns: 1fr
+    }
+ }
+ 
+ @media(max-width:576px){
+    .presentation_b{
+       width: 600px;
+       height: 500px;
+    }
+ }
+ 
